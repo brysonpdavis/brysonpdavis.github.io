@@ -340,6 +340,9 @@ h3 {
   width: 100%;
   padding-left: 6px;
   text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+  border-radius:0;
 }
 
 #submit_box {
@@ -350,6 +353,9 @@ h3 {
   text-transform: lowercase;
   width: 100%;
   cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+  border-radius:0;
 }
 
 #submit_box:hover {
