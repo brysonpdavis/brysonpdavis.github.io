@@ -1,8 +1,8 @@
 let real_headbackground =  "linear-gradient(#6698D9, white)";
-let real_background = "#CD946F  ";
+let real_background = "#cf8f65   ";
 let real_text = "#000";
 let laser_headbackground = "linear-gradient(90deg, #996fd6, #d0c9ea)";
-let laser_background = "#83707B ";
+let laser_background = "#806a7e  ";
 let laser_text = "#fffdd0";
 let white = '#fff';
 let black = '#000';
