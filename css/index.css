@@ -1,0 +1,376 @@
+:root {
+  --mod-head-background: #fff;
+  --mod-background: #000;
+  --mod-color: #000;
+  --submit-color: #fff;
+  --hover-color: #fff;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Concourse';
+  src: url("../fonts/concourse_t3_regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Concourse Caps';
+  src: url("../fonts/concourse_c3_regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Concourse';
+  src: url("../fonts/concourse_t6_regular.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Concourse Caps';
+  src: url("../fonts/concourse_c6_regular.woff") format("woff");
+  font-weight: bold;
+}
+
+
+html {
+  height: 100%;
+  margin: 0;
+  background: var(--mod-background);
+  background-position: 0;
+  overflow: auto;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    font-size: 21px;
+    width: 100%;
+    font-family: "Concourse", "Work Sans", sans-serif;
+    font-weight: normal;
+    color: var(--mod-color);
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+}
+
+header{
+    width: 100%;
+    min-height: 70px;
+    background-color: rgba(0,0,0,0));
+    text-align: center;
+    position: fixed;
+    top:0;
+    overflow: hidden;
+}
+
+header nav{
+    position: absolute;
+    bottom: 0;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    font-weight: 800;
+}
+
+header nav li{
+    display: inline-block;
+    padding: 10px auto;
+    line-height: 1;
+    cursor: pointer;
+    width: 20%;
+}
+
+header nav a li{
+    color: var(--mod-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav a li:hover{
+    color: yellow;
+    text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: calc(1.5 * 21px);
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+a :: hover {
+
+}
+
+em {
+  font-style: normal;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  font-family: "Concourse Caps", "Work Sans", sans-serif;
+}
+
+.wrapper0 {
+    width: 100%;
+    overflow: auto;
+}
+
+.wrapper1{
+    max-width: 1200px;
+    width:100%;
+    margin: 24px auto;
+    z-index: -2;
+    overflow: auto;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.hero-wrapper{
+  width: 100%;
+  flex-basis: 100%;
+  top: 0;
+  position: relative;
+  display: flex;
+}
+
+#logo_hero{
+  display: inline-block;
+  /* max-height: 30vw; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+#hero_image{
+  margin-top: 12.5%;
+  height: 50%;
+  max-width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#front_image {
+  width: 100%;
+  z-index: -2;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+#front-video {
+  position: absolute;
+  border: 4px solid black;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.col_single {
+  display: inline-block;
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 48px;
+  padding-top: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.centered-text-block {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col_left{
+    width: 100%;
+    padding-bottom: 48px;
+    padding-top: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    float: left;
+    line-height: 1.5;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-transform: lowercase;
+  font-family: "Concourse Caps", "Work Sans", sans-serif;
+  font-weight: bold;
+}
+
+.three_cols {
+  width: 100%;
+  max-width: 1200px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.one-third {
+  width: 33%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  float: left;
+}
+
+.one-fourth {
+  width: 24%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  float: left;
+}
+
+.screenshot {
+  width: 90%;
+  border: 3px solid black;
+}
+
+.col_right{
+    width: 100%;
+    padding-bottom: 48px;
+    padding-top: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: left;
+    float:right;
+    background-color: var(--mod-head-background);
+    text-transform: lowercase;
+    color: var(--mod-color);
+    line-height: 1.5;
+}
+
+.header_background{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--mod-head-background);
+}
+
+.wrapper_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.wrap_back_left {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left:0;
+    background: #e4e;
+}
+
+.wrap_back_right {
+    position: relative;
+    height: 100%;
+    width:50%;
+    top: 0;
+    right:0;
+    background-color: #4e4;
+}
+
+.footer {
+  background: var(--mod-color);
+  color: var(--mod-background);
+  height: 140px;
+  width: 100%;
+  padding-top: 48px;
+}
+
+#MERGE0 {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  border: 2px solid black;
+  background: white;
+  font-family: "Concourse", "Work Sans", sans-serif;
+  text-transform: lowercase;
+  width: 100%;
+  padding-left: 6px;
+  text-align: center;
+}
+
+#submit_box {
+  border: 2px solid black;
+  background: var(--mod-color);
+  color: var(--submit-color);
+  font-family: "Concourse Caps", "Work Sans", sans-serif;
+  text-transform: lowercase;
+  width: 100%;
+  cursor: pointer;
+}
+
+#submit_box:hover {
+  color: var(--hover-color);
+}
+
+.hoverable:hover{
+  color: var(--hover-color);
+}
+
+.mobile_scaled {
+    height: 84px;
+}
+
+.mobile-font-scaled {
+    font-size: 42px;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      .col_left { width : 50%;}
+      .col_right { width : 50%; }
+      .mobile_scaled {height:42px;}
+      .mobile-font-scaled{font-size: 21px;}
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+      .col_left { width : 50%;}
+      .col_right { width : 50%;}
+      .mobile_scaled {height:42px;}
+      .mobile-font-scaled{font-size: 21px;}
+}
