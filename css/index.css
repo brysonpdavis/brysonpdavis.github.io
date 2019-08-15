@@ -4,6 +4,7 @@
   --mod-color: #000;
   --submit-color: #fff;
   --hover-color: #fff;
+  --fade-opacity: 1;
 }
 
 ::selection {
@@ -121,6 +122,20 @@ em {
   font-family: "Concourse Caps", "Work Sans", sans-serif;
 }
 
+#black-fade {
+  background-color: black;
+  opacity: var(--fade-opacity);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 2;
+  pointer-events: none;
+}
+
 .wrapper0 {
     width: 100%;
     overflow: auto;
@@ -155,9 +170,8 @@ em {
 }
 
 #hero_image{
-  margin-top: 12.5%;
-  height: 50%;
-  max-width: 100%;
+  margin-top: 6%;
+  width: 55%;
   object-fit: cover;
   z-index: 0;
 }
