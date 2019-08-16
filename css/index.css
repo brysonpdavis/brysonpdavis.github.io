@@ -12,6 +12,10 @@
   color: white;
 }
 
+div#preload { 
+  display: none; 
+}
+
 *{
     box-sizing: border-box;
 }
@@ -64,7 +68,7 @@ body{
 header{
     width: 100%;
     min-height: 70px;
-    background-color: rgba(0,0,0,0));
+    background-color: rgba(0,0,0,0);
     text-align: center;
     position: fixed;
     top:0;
@@ -110,9 +114,9 @@ a {
   color: inherit;
 }
 
-a :: hover {
+/* a :: hover {
 
-}
+} */
 
 em {
   font-style: normal;
@@ -133,7 +137,7 @@ em {
   right: 0;
   position: fixed;
   z-index: 2;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .wrapper0 {

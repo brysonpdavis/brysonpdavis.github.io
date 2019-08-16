@@ -66,6 +66,10 @@ let fadeIn = function() {
   }, 25);
 }
 
+let startFlip = function() {
+  $("#black-fade").fadeIn(600, flip);
+}
+
 let flip = function() {
     switch (r0)
     {
@@ -81,6 +85,8 @@ let flip = function() {
             break;
         }
     }
+
+      $("#black-fade").fadeOut();
 }
 
 let setProp = function(prop, setTo) {
