@@ -118,7 +118,6 @@ function InitializeVars() {
   var screenshot1 = $("#screenshot1");
   var screenshot2 = $("#screenshot2");
   var screenshot3 = $("#screenshot3");
-  var close_modal = $("#close_modal");
   var modal_image = document.getElementById("modal_image");
   var modal = $("#modal");  
 }
@@ -143,5 +142,3 @@ function screenshot2clicked() {
 function screenshot3clicked() { 
     ActivateModal($("#screenshot3").attr('link'))
 };
-
-close_modal.onclick = function() {CloseModal()};
