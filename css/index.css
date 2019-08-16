@@ -182,6 +182,8 @@ em {
 
 #front_image {
   width: 100%;
+  height: auto;
+  display: block;
   z-index: -2;
   position: relative;
 }
