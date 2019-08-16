@@ -10,9 +10,10 @@
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/random.js"></script>
+    <script src="js/modal.js"></script>
     <a onclick = "startFlip()">
     <div class = "hero-wrapper">
-        <img id = "front_image" alt = "world" src = "../images/still.png">
+        <img id = "front_image" alt = "world" src = "images/real.png">
         <div id ="logo_hero">
             <img id="hero_image" src="images/logo.png" alt="POST">
         </div>
@@ -25,27 +26,21 @@
                 <p><em>crosshatch</em> is an atmospheric puzzle game about exploring a garden caught between parallel timelines.</p>
             </div>
             <div class = "video-container">
-              <iframe id = "front-video" src="https://www.youtube.com/embed/KJFQhEY9udE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe id = "front-video" src="https://www.youtube.com/embed/KJFQhEY9udE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
             </div>
           <div class = three_cols>
             <div class = "one-third">
-              <a id = "screenshot1link" href = "images/screenshots/cave.jpg">
-                <img id = "screenshot1" class = "screenshot" src = "images/screenshots/cave.jpg">
-              </a>
+                <img id = "screenshot1" class = "screenshot" src = "images/screenshots/cave.jpg" onclick = "screenshot1clicked()" link = "">
             </div>
             <div class = "one-third-spacing">
             </div>
             <div class = "one-third">
-              <a id = "screenshot2link" href = "images/screenshots/scape.jpg">
-                <img id = "screenshot2" class = "screenshot" src = "images/screenshots/scape.jpg">
-              </a>
+              <img id = "screenshot2" class = "screenshot" src = "images/screenshots/scape.jpg" onclick = "screenshot2clicked()" link = "">
             </div>
             <div class = "one-third-spacing">
             </div>  
             <div class = "one-third">
-              <a id = "screenshot3link" href = "images/screenshots/cube.jpg">
-                <img id = "screenshot3" class = "screenshot" src = "images/screenshots/cube.jpg">
-              </a>
+              <img id = "screenshot3" class = "screenshot" src = "images/screenshots/cube.jpg" onclick = "screenshot3clicked()" link = "">
             </div>
           </div>
         </div>
@@ -101,7 +96,12 @@
       </div>
     </div>
   </div>
-  <div id = "black-fade">
+  <a onclick = "CloseModal()">
+    <div id = "modal">
+      <img src = "images/screenshots/cube.jpg" id = "modal_image">
+    </div>
+  </a>
+<div id = "black-fade">
   </div>
   <div id = "preload">
     <img src = "images/real.png" width = "1" height = "1" alt = "preloaded 01">

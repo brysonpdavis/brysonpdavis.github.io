@@ -21,9 +21,9 @@ let goReal = function() {
   $("#screenshot1").attr('src', ('images/screenshots/outside_thumb.png'));
   $("#screenshot2").attr('src', ('images/screenshots/blue_room_thumb.png'));
   $("#screenshot3").attr('src', ('images/screenshots/cube1_thumb.png'));
-  $("#screenshot1link").attr('href', ('images/screenshots/outside.png'));
-  $("#screenshot2link").attr('href', ('images/screenshots/blue_room.jpg'));
-  $("#screenshot3link").attr('href', ('images/screenshots/cube1.jpg'));
+  $("#screenshot1").attr('link', ('images/screenshots/outside.png'));
+  $("#screenshot2").attr('link', ('images/screenshots/blue_room.jpg'));
+  $("#screenshot3").attr('link', ('images/screenshots/cube1.jpg'));
 }
 
 let goLaser = function() {
@@ -37,9 +37,9 @@ let goLaser = function() {
   $("#screenshot1").attr('src', ('images/screenshots/cave_thumb.png'));
   $("#screenshot2").attr('src', ('images/screenshots/scape_thumb.png'));
   $("#screenshot3").attr('src', ('images/screenshots/cube_thumb.png'));
-  $("#screenshot1link").attr('href', ('images/screenshots/cave.jpg'));
-  $("#screenshot2link").attr('href', ('images/screenshots/scape.jpg'));
-  $("#screenshot3link").attr('href', ('images/screenshots/cube.jpg'));
+  $("#screenshot1").attr('link', ('images/screenshots/cave.jpg'));
+  $("#screenshot2").attr('link', ('images/screenshots/scape.jpg'));
+  $("#screenshot3").attr('link', ('images/screenshots/cube.jpg'));
 }
 
 let fadeOut = function() {
@@ -113,3 +113,35 @@ $(document).ready(function(){
 });
 
 window.onload = function () { $("#black-fade").fadeOut(600); };
+
+function InitializeVars() {
+  var screenshot1 = $("#screenshot1");
+  var screenshot2 = $("#screenshot2");
+  var screenshot3 = $("#screenshot3");
+  var close_modal = $("#close_modal");
+  var modal_image = document.getElementById("modal_image");
+  var modal = $("#modal");  
+}
+
+function ActivateModal(source) {
+    modal.style.display = "block";
+    $(modal_image).attr("src", (source));
+}
+
+function CloseModal() {
+    modal.style.display = "none";
+}
+
+function screenshot1clicked() {
+    ActivateModal($("#screenshot1").attr('link'));
+}
+
+function screenshot2clicked() { 
+    ActivateModal($("#screenshot2").attr('link'))
+};
+
+function screenshot3clicked() { 
+    ActivateModal($("#screenshot3").attr('link'))
+};
+
+close_modal.onclick = function() {CloseModal()};
