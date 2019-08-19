@@ -16,7 +16,6 @@ let goReal = function() {
   setProp('--mod-color', real_text);
   setProp('--submit-color', white);
   setProp('--hover-color', red_orange);
-  // $("#hero_image").attr('src', ('images/logo_real.png'));
   $("#front_image").attr('src', ('images/real.png'));
   $("#screenshot1").attr('src', ('images/screenshots/outside_thumb.png'));
   $("#screenshot2").attr('src', ('images/screenshots/blue_room_thumb.png'));
@@ -32,7 +31,6 @@ let goLaser = function() {
   setProp('--mod-color', laser_text);
   setProp('--submit-color', black);
   setProp('--hover-color', pink_orange);
-  // $("#hero_image").attr('src', ('images/logo_laser.png'));
   $("#front_image").attr('src', ('images/laser.png'));
   $("#screenshot1").attr('src', ('images/screenshots/cave_thumb.png'));
   $("#screenshot2").attr('src', ('images/screenshots/scape_thumb.png'));
@@ -40,30 +38,6 @@ let goLaser = function() {
   $("#screenshot1").attr('link', ('images/screenshots/cave.jpg'));
   $("#screenshot2").attr('link', ('images/screenshots/scape.jpg'));
   $("#screenshot3").attr('link', ('images/screenshots/cube.jpg'));
-}
-
-let fadeOut = function() {
-    let opacity = 1;
-    var timer = setInterval(function () {
-      if (opacity <= 0.1){
-          $("#black-fade").style.display = 'none';
-          clearInterval(timer);
-      }
-      setProp("--fade-opacity", opacity);
-      opacity -= opacity * 0.05;
-    }, 25);
-}
-
-let fadeIn = function() {
-  let opacity = 0;
-  $("#black-fade").style.display = 'block';
-  var timer = setInterval(function() {
-    if (opacity >= 1) {
-      clearInterval(timer);
-    }
-    setProp("--fade-opacity", opacity);
-    opacity += opacity * 0.05;
-  }, 25);
 }
 
 let startFlip = function() {
@@ -113,32 +87,3 @@ $(document).ready(function(){
 });
 
 window.onload = function () { $("#black-fade").fadeOut(600); };
-
-function InitializeVars() {
-  var screenshot1 = $("#screenshot1");
-  var screenshot2 = $("#screenshot2");
-  var screenshot3 = $("#screenshot3");
-  var modal_image = document.getElementById("modal_image");
-  var modal = $("#modal");  
-}
-
-function ActivateModal(source) {
-    modal.style.display = "block";
-    $(modal_image).attr("src", (source));
-}
-
-function CloseModal() {
-    modal.style.display = "none";
-}
-
-function screenshot1clicked() {
-    ActivateModal($("#screenshot1").attr('link'));
-}
-
-function screenshot2clicked() { 
-    ActivateModal($("#screenshot2").attr('link'))
-};
-
-function screenshot3clicked() { 
-    ActivateModal($("#screenshot3").attr('link'))
-};
