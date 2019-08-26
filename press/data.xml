@@ -3,21 +3,25 @@
 
 <game>	
 	<title>Rustforms</title>
-	<website>http://www.crosshatch.space/</website>
+	<website>http://www.rustforms.net/</website>
 	<based-in>Brooklyn, New York</based-in>
+	<founding-date>2019</founding-date>
 	
 	<press-contact>info@rustforms.net</press-contact>
 	<phone>+1 (417) 830-7453</phone>
-	<address>
+	<!-- <address>
 		<line>370 Jay St</line>
 		<line>Brooklyn, NY</line>
-		<line>11201</line>
-	</address>
+	</address> -->
 
 	<socials>
 		<social>
-			<name>twitter.com/crosshatchgame</name>
+			<name>twitter</name>
 			<link>twitter.com/crosshatchgame</link>
+		</social>
+		<social>
+			<name>instagram</name>
+			<link>instagram.com/rustforms</link>
 		</social>
 	</socials>
 
@@ -25,30 +29,20 @@
 		We create strange worlds at an intimate scale.
 	</description>
 		
-	<histories>i
+	<histories>
 		<history>
-			<header>Early history</header>
-			<text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel nisi dolor. Pellentesque vitae eros velit, quis venenatis orci. Phasellus elit urna, semper ut gravida et, porta non dui. Aliquam erat volutpat. Aenean porta volutpat imperdiet. Maecenas venenatis, tellus eget vehicula vulputate, augue erat elementum quam, tincidunt laoreet magna orci et mauris. Proin porttitor pharetra nisi, accumsan sollicitudin neque varius a. Aenean ut massa ipsum, id hendrerit lacus. Maecenas posuere egestas nunc at cursus. Etiam mollis libero vel eros pulvinar aliquam. Sed vitae turpis sed nibh venenatis dictum. Sed suscipit orci justo, at sagittis ante. Sed leo nisl, ultricies in fermentum id, aliquam id dolor. Ut laoreet, felis id posuere bibendum, arcu ipsum lacinia est, eu lobortis velit enim eget mi. In ullamcorper ullamcorper enim ut gravida. Vivamus rutrum lacus mollis risus malesuada iaculis.</text>
-		</history>
-		<history>
-			<header>After that</header>
-			<text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem dui, volutpat eu adipiscing sed, rutrum aliquam lacus. Proin sollicitudin consequat dolor id dignissim. Aliquam sem turpis, sagittis lobortis viverra eget, varius vitae nunc. Proin ac lacus porttitor dui sollicitudin elementum. Nulla ut hendrerit est. Fusce vitae arcu erat, vel molestie est. Proin et placerat justo. Proin placerat arcu massa, eu blandit leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam eu lorem sed massa lobortis hendrerit vitae vel odio. Maecenas eget pulvinar tortor. Nunc vitae nisl ac odio bibendum luctus ac a leo. Suspendisse auctor elit et velit sagittis vehicula. Maecenas faucibus blandit rutrum. Duis et sem nibh. Vestibulum placerat elit et dui rhoncus accumsan.</text>
+			<text>Rustforms is a group of close friends and collaborators with backgrounds in film, graphic design, sound design, programming, and new media. We have been collaborating on projects for many years and are dedicated to building strange worlds at an intimate scale. Crosshatch is our first major game release. </text>
 		</history>
 	</histories>
 		
 	<trailers>
 		<trailer>
-			<name>This video is nice</name>
-			<youtube>7jQbITg0MSk</youtube>
-		</trailer>
-		<trailer>
-			<name>This one too</name>
-			<youtube>0CevOaYrYDA</youtube>
-			<vimeo>12536488</vimeo>
+			<name>Check out the teaser trailer for our first game, Crosshatch!</name>
+			<youtube>A8zTeXKvJK8</youtube>
 		</trailer>
 	</trailers>
 	
-	<awards>
+	<!-- <awards>
 		<award>
 			<description>Winner in this highly relevant contest.</description>
 			<info>Award Location, 20 October, 1989</info>
@@ -65,9 +59,9 @@
 			<description>Nomination for this prestigious award.</description>
 			<info>Award Ceremony, 4 December, 1991</info>
 		</award>
-	</awards>
+	</awards> -->
 	
-	<quotes>
+	<!-- <quotes>
 		<quote>
 			<description>This is a rather insignificant quote by a highly important person.</description>
 			<name>Person Name</name>
@@ -92,25 +86,37 @@
 			<website>Angry Review</website>
 			<link>http://thispage.net/angrytube</link>
 		</quote>
-	</quotes>
+	</quotes> -->
 	
 	<press-can-request-copy>TRUE</press-can-request-copy> <!-- can be true or false -->
 	<monetization-permission>monetize</monetization-permission> <!-- can be: 	false (no video allowed),
 																			 	ask (permission on case-per-case basis),
 																			 	non-commercial (no monetization allowed),
 																			 	monetize (full permission) -->	
-	<additionals>
+	<!-- <additionals>
 		<additional>
 			<title>Company Link #1</title>
 			<description>This link is a link that might be useful. You can check it out at</description>
 			<link>http://somemusicsite.com/thislink</link>
 		</additional>
-	</additionals>
+	</additionals> -->
 	
 	<credits>
 		<credit>
+			<person>Will Freudenheim</person>
+			<role>Project Manager, Sound Designer</role>
+		</credit>
+		<credit>
 			<person>Seamus Edson</person>
 			<role>Artist</role>
+		</credit>
+		<credit>
+			<person>Aaron Kelly-Penso</person>
+			<role>Narrative and Level Desiger</role>
+		</credit>
+		<credit>
+			<person>Bryson Davis</person>
+			<role>Programmer</role>
 		</credit>
 	</credits>
 	

@@ -338,11 +338,19 @@ h3 {
 }
 
 .footer {
+  position: relative;
   background: var(--mod-color);
   color: var(--mod-background);
-  height: 140px;
+  height: 240px;
   width: 100%;
   padding-top: 48px;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 50;
+  width: 100%;
+  text-align: center;
 }
 
 #MERGE0 {

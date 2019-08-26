@@ -17,12 +17,12 @@ let goReal = function() {
   setProp('--submit-color', white);
   setProp('--hover-color', red_orange);
   $("#front_image").attr('src', ('images/real.png'));
-  $("#screenshot1").attr('src', ('images/screenshots/outside_thumb.png'));
-  $("#screenshot2").attr('src', ('images/screenshots/blue_room_thumb.png'));
-  $("#screenshot3").attr('src', ('images/screenshots/cube1_thumb.png'));
-  $("#screenshot1").attr('link', ('images/screenshots/outside.png'));
-  $("#screenshot2").attr('link', ('images/screenshots/blue_room.jpg'));
-  $("#screenshot3").attr('link', ('images/screenshots/cube1.jpg'));
+  $("#screenshot1").attr('src', ('images/screenshots/t1.png'));
+  $("#screenshot2").attr('src', ('images/screenshots/t2.png'));
+  $("#screenshot3").attr('src', ('images/screenshots/t3.png'));
+  $("#screenshot1").attr('link', ('images/screenshots/w1.png'));
+  $("#screenshot2").attr('link', ('images/screenshots/w2.png'));
+  $("#screenshot3").attr('link', ('images/screenshots/w3.png'));
 }
 
 let goLaser = function() {
@@ -32,12 +32,12 @@ let goLaser = function() {
   setProp('--submit-color', black);
   setProp('--hover-color', pink_orange);
   $("#front_image").attr('src', ('images/laser.png'));
-  $("#screenshot1").attr('src', ('images/screenshots/cave_thumb.png'));
-  $("#screenshot2").attr('src', ('images/screenshots/scape_thumb.png'));
-  $("#screenshot3").attr('src', ('images/screenshots/cube_thumb.png'));
-  $("#screenshot1").attr('link', ('images/screenshots/cave.jpg'));
-  $("#screenshot2").attr('link', ('images/screenshots/scape.jpg'));
-  $("#screenshot3").attr('link', ('images/screenshots/cube.jpg'));
+  $("#screenshot1").attr('src', ('images/screenshots/t1.png'));
+  $("#screenshot2").attr('src', ('images/screenshots/t2.png'));
+  $("#screenshot3").attr('src', ('images/screenshots/t3.png'));
+  $("#screenshot1").attr('link', ('images/screenshots/w1.png'));
+  $("#screenshot2").attr('link', ('images/screenshots/w2.png'));
+  $("#screenshot3").attr('link', ('images/screenshots/w3.png'));
 }
 
 let startFlip = function() {
